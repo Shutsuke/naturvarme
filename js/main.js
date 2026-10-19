@@ -1,5 +1,7 @@
 (function () {
-  // Mobile nav
+  'use strict';
+
+  // --- Mobilmeny ---------------------------------------------------------
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
   if (toggle && nav) {
@@ -15,13 +17,16 @@
     });
   }
 
-  // Savings calculator (fingervisning – inte en offert)
-  var PRICE = 1.45; // kr/kWh inkl. nät och skatt
+  // --- Besparingskalkylator ----------------------------------------------
+  // Fingervisning, inte en offert. Antagandena står också i texten bredvid
+  // kalkylatorn så att ingen tror att det är en beräkning på deras hus.
+  var PRICE = 1.45; // kr/kWh inkl. nät och skatt (schablon)
   var CFG = {
     ll:   { cover: 0.65, cop: 2.6 }, // luft/luft täcker ca 65 % av värmebehovet
-    lv:   { cover: 1,    cop: 2.9 },
-    berg: { cover: 1,    cop: 3.6 }
+    lv:   { cover: 1,    cop: 2.9 }, // luft/vatten ersätter hela pannan
+    berg: { cover: 1,    cop: 3.6 }  // bergvärme, årsvärmefaktor i norrländskt klimat
   };
+
   var kwh = document.getElementById('kwh');
   var typ = document.getElementById('typ');
   if (!kwh || !typ) return;
@@ -39,6 +44,7 @@
     document.getElementById('saving').textContent = fmt(saving) + ' kr';
     document.getElementById('savingMonth').textContent = fmt(round(saving / 12, 10));
   }
+
   kwh.addEventListener('input', update);
   typ.addEventListener('change', update);
   update();

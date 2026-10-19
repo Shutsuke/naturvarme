@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Save It Naturvärme – Värmepumpar i Luleå, Tornedalen och Norrbotten</title>
-<meta name="description" content="Certifierad försäljning, installation och service av luft/luft-, luft/vatten- och bergvärmepumpar i Luleå, Kangos och hela Norrbotten. Kostnadsfritt hembesök.">
+<title>Värmepumpar i Luleå och Kangos – Save It Naturvärme</title>
+<meta name="description" content="Certifierad försäljning, installation och service av luft/luft-, luft/vatten- och bergvärmepumpar i Luleå, Kangos och Tornedalen. Kostnadsfritt hembesök och ett pris där installation och ROT-avdrag ingår.">
+<meta property="og:title" content="Värmepumpar i Luleå och Kangos – Save It Naturvärme">
+<meta property="og:description" content="Pumpar som är valda för att gå när det är trettiofem minus. Kostnadsfritt hembesök, certifierade montörer, pris där installation och ROT ingår.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,27 +19,32 @@
 
 <div class="topbar">
   <div class="wrap topbar__in">
-    <span>Kostnadsfritt hembesök i Luleå, Tornedalen och hela Norrbotten</span>
-    <span>Mån–fre 07–17 · <a href="tel:0703432024">070-343 20 24</a></span>
+    <span>Kostnadsfritt hembesök · Luleå och Kangos</span>
+    <span>Kontorstid · <a href="tel:0703432024">070-343 20 24</a></span>
   </div>
 </div>
 
 <header class="header">
   <div class="wrap header__in">
     <a class="brand" href="#top" aria-label="Save It Naturvärme, till startsidan">
-      <svg width="40" height="40" viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="8" fill="#14213D"/><path d="M8 32 L21 8 L34 32 Z" fill="#E0A52B"/><path d="M14 32 L21 19 L28 32 Z" fill="#14213D"/><rect x="19" y="26" width="4" height="6" fill="#E0A52B"/></svg>
-      <span class="brand__name">Save It <span>Naturvärme</span></span>
+      <!-- Platshållare: tvåfärgad pilmarkering i logotypens blå och röda.
+           Byts mot kundens riktiga logotyp (behöver vektor eller transparent PNG). -->
+      <svg class="brand__mark" width="42" height="34" viewBox="0 0 42 34" aria-hidden="true">
+        <path d="M1 17 L14 2 L23 2 L10 17 L23 32 L14 32 Z" fill="#C1272A"/>
+        <path d="M19 2 L28 2 L41 17 L28 32 L19 32 L32 17 Z" fill="#2B57A2"/>
+      </svg>
+      <span class="brand__name">Save-It <span>Naturvärme</span></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Meny">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="nav">
+      <a href="#koldskalan">Köldskalan</a>
       <a href="#losningar">Värmepumpar</a>
+      <a href="#modeller">Modeller</a>
       <a href="#rakna">Räkna själv</a>
-      <a href="#erbjudanden">Erbjudanden</a>
       <a href="#om">Om oss</a>
-      <a href="#kontakt">Kontakt</a>
-      <a class="btn btn--primary" href="#kontakt">Boka hembesök</a>
+      <a class="btn btn--red" href="#kontakt">Boka hembesök</a>
     </nav>
   </div>
 </header>
@@ -46,97 +55,21 @@
 <section class="hero" id="top">
   <div class="wrap hero__in">
     <div class="hero__text">
-      <p class="eyebrow eyebrow--light">Värmepumpar · Luleå &amp; Tornedalen</p>
-      <h1>Värme som klarar <span>trettio minus.</span></h1>
-      <p class="lead">Vi säljer, installerar och servar värmepumpar som är valda för Norrbottens vintrar – från Kangos till Luleå. Certifierade montörer, fast pris och ett hembesök som inte kostar något.</p>
+      <p class="eyebrow eyebrow--light">Värmepumpar · Luleå &amp; Kangos</p>
+      <h1>Värme som går när det är <span>trettiofem minus.</span></h1>
+      <p class="lead">Vi säljer, installerar och servar luft/luft-, luft/vatten- och bergvärmepumpar i Luleå, Kangos och trakten däromkring. Kostnadsfritt hembesök, certifierade montörer och ett pris där installationen och ROT-avdraget redan är inräknade.</p>
       <div class="hero__cta">
-        <a class="btn btn--accent" href="#kontakt">Boka kostnadsfritt hembesök</a>
-        <a class="btn btn--outline-light" href="#rakna">Räkna på ditt hus</a>
+        <a class="btn btn--red" href="#kontakt">Boka kostnadsfritt hembesök</a>
+        <a class="btn btn--outline-light" href="#koldskalan">Se köldskalan</a>
       </div>
       <ul class="checks">
-        <li>Certifierade enligt Boverket BFS 2015:4</li>
+        <li>Certifierade enligt Boverket BFS 2015:4 CIN 2</li>
         <li>Medlem i Svenska Kyl &amp; Värmepumpföreningen</li>
-        <li>Mitsubishi &amp; Daikin</li>
+        <li>Auktoriserade för Mitsubishi Electric och Daikin</li>
       </ul>
     </div>
-    <div class="hero__art">
-      <svg viewBox="0 0 560 480" role="img" aria-label="Illustration: rött timmerhus med värmepump under norrsken, granskog och älv">
-        <defs><linearGradient id="au" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3FA37B" stop-opacity="0"/><stop offset=".4" stop-color="#3FA37B" stop-opacity=".9"/><stop offset=".7" stop-color="#E0A52B" stop-opacity=".7"/><stop offset="1" stop-color="#3FA37B" stop-opacity="0"/></linearGradient></defs>
-        <g fill="url(#au)"><path d="M0 60 C 90 10, 170 150, 280 70 S 470 20, 560 90 L 560 150 C 440 110, 340 230, 220 150 S 60 180, 0 140 Z" opacity=".9"/><path d="M0 120 C 120 70, 220 210, 330 120 S 500 90, 560 140 L 560 190 C 470 170, 350 270, 240 190 S 80 220, 0 190 Z" opacity=".55"/></g>
-        <g fill="#F4F3EE"><circle cx="60" cy="40" r="2"/><circle cx="140" cy="22" r="1.5"/><circle cx="410" cy="30" r="2"/><circle cx="500" cy="60" r="1.5"/><circle cx="330" cy="50" r="1.2"/><circle cx="230" cy="26" r="1.2"/></g>
-        <circle cx="470" cy="110" r="26" fill="#F4F3EE"/><circle cx="480" cy="104" r="22" fill="#14213D"/>
-        <g fill="#0B1430"><path d="M0 330 L28 240 L56 330Z"/><path d="M40 330 L80 190 L120 330Z"/><path d="M100 330 L128 262 L156 330Z"/><path d="M420 330 L450 230 L480 330Z"/><path d="M470 330 L510 180 L550 330Z"/><path d="M530 330 L560 250 L560 330Z"/><path d="M-10 330 L18 270 L46 330Z"/><path d="M66 330 L96 250 L126 330Z"/><path d="M400 330 L428 272 L456 330Z"/><path d="M500 330 L530 240 L560 330Z"/></g>
-        <g fill="#F4F3EE" opacity=".9"><rect x="150" y="285" width="4" height="45"/><rect x="170" y="275" width="4" height="55"/><rect x="380" y="282" width="4" height="48"/></g>
-        <g fill="#0B1430"><ellipse cx="152" cy="280" rx="14" ry="6"/><ellipse cx="172" cy="268" rx="16" ry="7"/><ellipse cx="382" cy="276" rx="14" ry="6"/></g>
-        <path d="M200 330 L290 220 L380 330 Z" fill="#8C2F23"/>
-        <rect x="212" y="318" width="156" height="12" fill="#F4F3EE"/>
-        <path d="M190 330 L290 212 L390 330 L380 330 L290 226 L200 330 Z" fill="#F4F3EE"/>
-        <rect x="215" y="240" width="150" height="90" fill="#8C2F23"/>
-        <g fill="#B7472F"><rect x="215" y="252" width="150" height="3"/><rect x="215" y="270" width="150" height="3"/><rect x="215" y="288" width="150" height="3"/><rect x="215" y="306" width="150" height="3"/></g>
-        <rect x="232" y="258" width="36" height="34" fill="#E0A52B"/><rect x="248" y="258" width="4" height="34" fill="#8C2F23"/><rect x="232" y="273" width="36" height="4" fill="#8C2F23"/>
-        <rect x="312" y="258" width="36" height="34" fill="#E0A52B"/><rect x="328" y="258" width="4" height="34" fill="#8C2F23"/><rect x="312" y="273" width="36" height="4" fill="#8C2F23"/>
-        <rect x="276" y="276" width="28" height="54" fill="#0B1430"/><circle cx="298" cy="304" r="2.5" fill="#E0A52B"/>
-        <rect x="318" y="212" width="18" height="26" fill="#0B1430"/>
-        <g><rect x="372" y="290" width="40" height="30" rx="2" fill="#C7CCD3"/><circle cx="392" cy="305" r="10" fill="#F4F3EE"/><circle cx="392" cy="305" r="3" fill="#14213D"/><path d="M392 295 L392 315 M382 305 L402 305 M385 298 L399 312 M399 298 L385 312" stroke="#5B6572" stroke-width="1.5"/></g>
-        <g stroke="#E0A52B" stroke-width="2" fill="none" opacity=".8"><path d="M418 300 c6 -4 6 4 12 0"/><path d="M418 308 c6 -4 6 4 12 0"/><path d="M418 292 c6 -4 6 4 12 0"/></g>
-        <rect x="0" y="330" width="560" height="150" fill="#F4F3EE"/>
-        <path d="M0 360 C 120 345, 260 395, 420 370 S 560 360, 560 380 L 560 480 L 0 480 Z" fill="#2B4A6B"/>
-        <path d="M0 410 C 150 395, 300 440, 560 415" stroke="#F4F3EE" stroke-width="2" fill="none" opacity=".4"/>
-        <path d="M0 448 C 200 432, 350 470, 560 450" stroke="#F4F3EE" stroke-width="2" fill="none" opacity=".25"/>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<!-- KÖLDSKALAN -->
-<section class="scale">
-  <div class="wrap">
-    <div class="section-head section-head--light">
-      <h2>Köldskalan</h2>
-      <p>Ungefärlig utetemperatur där pumpen fortfarande levererar värme, enligt tillverkarnas uppgifter. Ju längre ut till vänster, desto bättre.</p>
-    </div>
-    <div class="thermo">
-      <svg class="thermo__svg" viewBox="0 0 300 520" role="img" aria-label="Termometer: lågprispump slutar vid −15 grader, Daikin Caldo XR vid −30, Mitsubishi Hero vid −35, bergvärme påverkas inte av utetemperaturen">
-        <defs>
-          <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#E0A52B"/>
-            <stop offset=".35" stop-color="#C9CFDA"/>
-            <stop offset="1" stop-color="#2B4A6B"/>
-          </linearGradient>
-        </defs>
-        <!-- glass -->
-        <rect x="118" y="20" width="44" height="430" rx="22" fill="#0B1430" stroke="#C9CFDA" stroke-width="3"/>
-        <circle cx="140" cy="462" r="36" fill="#0B1430" stroke="#C9CFDA" stroke-width="3"/>
-        <!-- liquid: full column, color shows warm (top) to cold (bottom) -->
-        <rect x="128" y="36" width="24" height="420" rx="12" fill="url(#liq)"/>
-        <circle cx="140" cy="462" r="26" fill="#2B4A6B"/>
-        <!-- scale ticks, +10 at top (y=40) to −40 at bottom (y=440): 8 px per degree -->
-        <g stroke="#C9CFDA" stroke-width="2">
-          <line x1="96" y1="40" x2="114" y2="40"/><line x1="96" y1="120" x2="114" y2="120"/><line x1="96" y1="200" x2="114" y2="200"/><line x1="96" y1="280" x2="114" y2="280"/><line x1="96" y1="360" x2="114" y2="360"/><line x1="96" y1="440" x2="114" y2="440"/>
-        </g>
-        <g stroke="#C9CFDA" stroke-width="1.5" opacity=".5">
-          <line x1="104" y1="80" x2="114" y2="80"/><line x1="104" y1="160" x2="114" y2="160"/><line x1="104" y1="240" x2="114" y2="240"/><line x1="104" y1="320" x2="114" y2="320"/><line x1="104" y1="400" x2="114" y2="400"/>
-        </g>
-        <g fill="#C9CFDA" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="14" text-anchor="end">
-          <text x="88" y="45">+10°</text><text x="88" y="125">0°</text><text x="88" y="205">−10°</text><text x="88" y="285">−20°</text><text x="88" y="365">−30°</text><text x="88" y="445">−40°</text>
-        </g>
-        <!-- limit markers on the right -->
-        <g stroke-width="3" stroke-linecap="round">
-          <line x1="166" y1="240" x2="210" y2="240" stroke="#8793A6"/>
-          <line x1="166" y1="360" x2="210" y2="360" stroke="#E0A52B"/>
-          <line x1="166" y1="400" x2="210" y2="400" stroke="#E0A52B"/>
-        </g>
-        <g fill="#8793A6" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="13"><text x="216" y="236">−15°</text><text x="216" y="252" font-size="11" font-weight="700">Lågprispump</text></g>
-        <g fill="#E0A52B" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="13"><text x="216" y="356">−30°</text><text x="216" y="372" font-size="11" font-weight="700">Daikin Caldo</text></g>
-        <g fill="#E0A52B" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="13"><text x="216" y="396">−35°</text><text x="216" y="412" font-size="11" font-weight="700">Mitsubishi Hero</text></g>
-        <g fill="#FFFFFF" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="12"><text x="186" y="458">Bergvärme</text><text x="186" y="474" font-size="11" font-weight="700" fill="#C9CFDA">påverkas inte</text></g>
-      </svg>
-      <ul class="thermo__legend">
-        <li class="thermo__item thermo__item--dim"><strong>−15°</strong><span>Vanlig lågprispump från varuhuset. Under det tar elpatronen över – och elräkningen.</span></li>
-        <li class="thermo__item"><strong>−30°</strong><span>Daikin Caldo XR. Utvecklad för nordiskt klimat, vårt vanligaste val för villan.</span></li>
-        <li class="thermo__item"><strong>−35°</strong><span>Mitsubishi Hero MSZ-LN. Full effekt till −25°, går ner till −35°.</span></li>
-        <li class="thermo__item thermo__item--full"><strong>∞</strong><span>Bergvärme hämtar värmen hundra meter ner där det alltid är plus sex grader. Utetemperaturen spelar ingen roll.</span></li>
-      </ul>
+    <div class="hero__img">
+      <img src="https://images.unsplash.com/photo-1604614006904-49e3b710eeb8?w=1100&q=70&auto=format&fit=crop" alt="Rött trähus med snötäckt tak och rök ur skorstenen, omgivet av snö och granskog" loading="eager" width="1100" height="1650">
     </div>
   </div>
 </section>
@@ -144,10 +77,201 @@
 <!-- SIFFROR -->
 <section class="stats">
   <div class="wrap stats__grid">
-    <div><strong>27</strong><span>år i branschen</span><p>Startade i Kangos 1999. Fortfarande samma telefonnummer.</p></div>
-    <div><strong>1 100+</strong><span>installerade pumpar</span><p>Från Vittangi i norr till Råneå i söder.</p></div>
-    <div><strong>1 dag</strong><span>tar en luft/luft-installation</span><p>Vi städar, går igenom fjärrkontrollen och åker.</p></div>
-    <div><strong>0 kr</strong><span>för hembesök och offert</span><p>Fast pris på papper innan vi skruvar i en enda skruv.</p></div>
+    <div><strong>1999</strong><span>året bolaget startade</span><p>Save-it Naturvärme AB, registrerat i Pajala kommun.</p></div>
+    <div><strong>&minus;35&deg;</strong><span>garanterad drift</span><p>Både Mitsubishi Hero och Daikin Caldo går ner dit.</p></div>
+    <div><strong>0 kr</strong><span>för hembesök och rådgivning</span><p>Vi kommer ut, tittar på huset och räknar – utan kostnad.</p></div>
+    <div><strong>2</strong><span>kontor</span><p>Björkskatavägen i Luleå och Norra byavägen i Kangos.</p></div>
+  </div>
+</section>
+
+<!-- KÖLDSKALAN – signaturelement -->
+<section class="scale" id="koldskalan">
+  <div class="wrap">
+    <div class="section-head section-head--light">
+      <p class="eyebrow eyebrow--light">Signaturfrågan</p>
+      <h2>Köldskalan</h2>
+      <p>Den enda fråga som spelar roll här uppe: levererar pumpen värme när det är som kallast? Skalan visar ungefär var olika lösningar slutar leverera. Siffrorna för Hero och Caldo är tillverkarnas uppgift om garanterad drift.</p>
+    </div>
+    <div class="thermo">
+      <svg class="thermo__svg" viewBox="0 0 300 520" role="img" aria-label="Termometer från plus tio till minus fyrtio grader. En billig varuhuspump slutar leverera runt minus femton grader. Mitsubishi Hero och Daikin Caldo har garanterad drift till minus trettiofem grader. Bergvärme påverkas inte alls av utetemperaturen.">
+        <defs>
+          <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#C1272A"/>
+            <stop offset=".3" stop-color="#9AA8BF"/>
+            <stop offset="1" stop-color="#2B57A2"/>
+          </linearGradient>
+        </defs>
+        <rect x="118" y="20" width="44" height="430" rx="22" fill="#0E2142" stroke="#8FA3C4" stroke-width="3"/>
+        <circle cx="140" cy="462" r="36" fill="#0E2142" stroke="#8FA3C4" stroke-width="3"/>
+        <rect x="128" y="36" width="24" height="420" rx="12" fill="url(#liq)"/>
+        <circle cx="140" cy="462" r="26" fill="#2B57A2"/>
+        <g stroke="#8FA3C4" stroke-width="2">
+          <line x1="96" y1="40" x2="114" y2="40"/><line x1="96" y1="120" x2="114" y2="120"/><line x1="96" y1="200" x2="114" y2="200"/><line x1="96" y1="280" x2="114" y2="280"/><line x1="96" y1="360" x2="114" y2="360"/><line x1="96" y1="440" x2="114" y2="440"/>
+        </g>
+        <g stroke="#8FA3C4" stroke-width="1.5" opacity=".45">
+          <line x1="104" y1="80" x2="114" y2="80"/><line x1="104" y1="160" x2="114" y2="160"/><line x1="104" y1="240" x2="114" y2="240"/><line x1="104" y1="320" x2="114" y2="320"/><line x1="104" y1="400" x2="114" y2="400"/>
+        </g>
+        <g fill="#C9D3E4" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="14" text-anchor="end">
+          <text x="88" y="45">+10°</text><text x="88" y="125">0°</text><text x="88" y="205">−10°</text><text x="88" y="285">−20°</text><text x="88" y="365">−30°</text><text x="88" y="445">−40°</text>
+        </g>
+        <g stroke-width="3" stroke-linecap="round">
+          <line x1="166" y1="240" x2="206" y2="240" stroke="#8793A6"/>
+          <line x1="166" y1="400" x2="206" y2="400" stroke="#E8545A"/>
+        </g>
+        <g font-family="Manrope, system-ui, sans-serif" font-weight="800">
+          <text x="212" y="236" fill="#8793A6" font-size="13">−15°</text>
+          <text x="212" y="252" fill="#8793A6" font-size="11">Varuhuspump</text>
+          <text x="212" y="396" fill="#E8545A" font-size="13">−35°</text>
+          <text x="212" y="412" fill="#E8545A" font-size="11">Hero &amp; Caldo</text>
+          <text x="184" y="458" fill="#FFFFFF" font-size="12">Bergvärme</text>
+          <text x="184" y="474" fill="#C9D3E4" font-size="11">påverkas inte</text>
+        </g>
+      </svg>
+      <ul class="thermo__legend">
+        <li class="thermo__item thermo__item--dim">
+          <strong>&minus;15&deg;</strong>
+          <span>Ungefär där en billig varuhuspump ger upp. Under den gränsen tar elpatronen över – och elräkningen med den. Siffran är en tumregel, inte en tillverkaruppgift.</span>
+        </li>
+        <li class="thermo__item thermo__item--hot">
+          <strong>&minus;35&deg;</strong>
+          <span>Garanterad drift för både <strong>Mitsubishi Hero MSZ-LN</strong> och <strong>Daikin Caldo XRH</strong>. Det är de två vi har som aktuella erbjudanden.</span>
+        </li>
+        <li class="thermo__item thermo__item--full">
+          <strong>∞</strong>
+          <span>Berg- och jordvärme hämtar värmen ur marken, som håller nästan samma temperatur året om. Utetemperaturen spelar ingen roll alls.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- LÖSNINGAR -->
+<section class="solutions" id="losningar">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Våra lösningar</p>
+      <h2>Fyra sätt att hämta värme ur naturen</h2>
+      <p>Vår största energikälla är solen. Den värmer luften, jorden, berggrunden och vattnet – bara en minimal mängd av den gratisenergin tas idag tillvara.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__art">
+          <svg viewBox="0 0 160 100" role="img" aria-label="Schematisk bild: utedel på husvägg som för värme in till en inomhusdel">
+            <path d="M28 76 V40 L58 20 L88 40 V76 Z" fill="none" stroke="#2B57A2" stroke-width="2.5"/>
+            <rect x="44" y="46" width="28" height="12" fill="#2B57A2" opacity=".18"/>
+            <rect x="44" y="46" width="28" height="12" fill="none" stroke="#2B57A2" stroke-width="2"/>
+            <rect x="104" y="44" width="34" height="30" rx="3" fill="none" stroke="#1A2232" stroke-width="2.5"/>
+            <circle cx="121" cy="59" r="9" fill="none" stroke="#1A2232" stroke-width="2"/>
+            <path d="M121 52 v14 M114 59 h14" stroke="#1A2232" stroke-width="1.5"/>
+            <g stroke="#C1272A" stroke-width="2.5" fill="none" stroke-linecap="round">
+              <path d="M100 52 H78"/><path d="M84 46 l-6 6 6 6"/>
+            </g>
+            <line x1="12" y1="76" x2="148" y2="76" stroke="#1A2232" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="tag">Vanligaste valet</span>
+          <h3>Luft/luft</h3>
+          <p>Hämtar värme ur utomhusluften och för över den till inomhusluften. Passar direktvärmda småhus, och även mindre butiker och verkstäder. Kan reverseras och fungera som luftkonditionering på sommaren.</p>
+          <small>Passar: villa med elradiatorer, fritidshus, butik. Gör inte varmvatten.</small>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__art">
+          <svg viewBox="0 0 160 100" role="img" aria-label="Schematisk bild: utedel som värmer vatten till radiator och varmvattenberedare">
+            <rect x="18" y="40" width="36" height="34" rx="3" fill="none" stroke="#1A2232" stroke-width="2.5"/>
+            <circle cx="36" cy="57" r="10" fill="none" stroke="#1A2232" stroke-width="2"/>
+            <path d="M36 49 v16 M28 57 h16" stroke="#1A2232" stroke-width="1.5"/>
+            <g stroke="#C1272A" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M58 50 H82"/><path d="M76 44 l6 6 -6 6"/></g>
+            <rect x="88" y="30" width="26" height="44" rx="12" fill="#2B57A2" opacity=".15"/>
+            <rect x="88" y="30" width="26" height="44" rx="12" fill="none" stroke="#2B57A2" stroke-width="2.5"/>
+            <g stroke="#2B57A2" stroke-width="2.5" fill="none"><path d="M124 46 v28 M131 46 v28 M138 46 v28"/><path d="M120 46 h22 M120 74 h22"/></g>
+            <line x1="12" y1="80" x2="148" y2="80" stroke="#1A2232" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="tag">Vattenburet</span>
+          <h3>Luft/vatten</h3>
+          <p>Hämtar värme ur utomhusluften och för över den till husets vattenburna värmesystem. Gör även tappvarmvatten. En förhållandevis billig investering, och ingen borrning behövs.</p>
+          <small>Passar: hus med radiatorer eller golvvärme och el- eller oljepanna.</small>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__art">
+          <svg viewBox="0 0 160 100" role="img" aria-label="Schematisk bild: borrhål ner i berggrunden med kollektorslang upp till huset">
+            <path d="M26 56 V28 L52 10 L78 28 V56" fill="none" stroke="#1A2232" stroke-width="2.5"/>
+            <line x1="8" y1="56" x2="152" y2="56" stroke="#1A2232" stroke-width="2.5"/>
+            <g fill="#2B57A2" opacity=".12"><rect x="8" y="58" width="144" height="40"/></g>
+            <path d="M66 56 V84 a8 8 0 0 0 16 0 V56" fill="none" stroke="#C1272A" stroke-width="2.5"/>
+            <path d="M52 56 v-6 h14" fill="none" stroke="#C1272A" stroke-width="2.5"/>
+            <g stroke="#2B57A2" stroke-width="1.5" opacity=".55"><path d="M96 66 h40 M100 76 h36 M96 86 h44 M20 70 h30 M24 82 h26"/></g>
+            <text x="112" y="50" fill="#2B57A2" font-family="Manrope, system-ui, sans-serif" font-size="12" font-weight="800">+6°</text>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="tag">Stabilast</span>
+          <h3>Berg- och jordvärme</h3>
+          <p>Nere i berggrunden finns en kostnadsfri värmekälla som håller nästan samma temperatur året om. Hög årsvärmefaktor: upp till 3,9 med radiatorer och upp till 4,9 med vattenburen golvvärme.</p>
+          <small>Passar: permanentbostad, större hus. Hög investering, låg driftkostnad.</small>
+        </div>
+      </article>
+    </div>
+    <p class="note">Vi installerar även <strong>frånluftvärmepumpar</strong>, som tar vara på värmen i inomhusluften och samtidigt ökar ventilationen – det minskar ofta problem med mögel, fukt och radon.</p>
+  </div>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+  <img src="https://images.unsplash.com/photo-1766503494739-66006a498fa3?w=2000&q=70&auto=format&fit=crop" alt="Delvis isbelagd älv med en liten by och en lada på andra sidan, grå vinterdag" loading="lazy" width="2000" height="1125">
+  <div class="banner__text">
+    <p>»Vi ger dig ett pris där installation och ROT-avdrag ingår, en driftsklar anläggning.«</p>
+    <span>Save It Naturvärme</span>
+  </div>
+</section>
+
+<!-- MODELLER -->
+<section class="models" id="modeller">
+  <div class="wrap">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Modeller vi säljer och lagerför</p>
+        <h2>Siffrorna, utan svammel</h2>
+      </div>
+      <p>Vi lagerför Mitsubishi Electric, Daikin och Bosch. Ring eller skriv så får du ett pris där installation och ROT-avdrag ingår.</p>
+    </div>
+    <div class="models__grid">
+      <article class="model">
+        <header><span>Luft/luft</span><span class="tag tag--red">Mitsubishis mest sålda</span></header>
+        <h3>Mitsubishi Hero 2.0 MSZ-LN</h3>
+        <p>Värmepumpen som dominerar värme och kyla. I SEE-sensor, nattläge, cirkulationsläge och wifi – så att stugan är varm när du kommer fram.</p>
+        <dl class="spec">
+          <div><dt>SCOP</dt><dd>5,2</dd></div>
+          <div><dt>Ljudnivå</dt><dd>19 dB</dd></div>
+          <div><dt>Värmekapacitet</dt><dd>1,0–8,7 kW</dd></div>
+          <div><dt>Kylkapacitet</dt><dd>0,8–5,8 kW</dd></div>
+          <div><dt>Garanterad drift</dt><dd class="spec--hot">−35°</dd></div>
+        </dl>
+        <a class="btn btn--blue" href="#kontakt">Be om pris</a>
+      </article>
+      <article class="model">
+        <header><span>Luft/luft</span><span class="tag">Nordiskt köldmedium R32</span></header>
+        <h3>Daikin Caldo XRH</h3>
+        <p>Toppresterande luft/luftvärmepump utvecklad för vårt kalla nordiska klimat, med R32 som köldmedium.</p>
+        <dl class="spec">
+          <div><dt>SCOP</dt><dd>5,3</dd></div>
+          <div><dt>Ljudnivå</dt><dd>19 dB</dd></div>
+          <div><dt>Värmekapacitet</dt><dd>0,8–7,2 kW</dd></div>
+          <div><dt>Kylkapacitet</dt><dd>0,7–5,1 kW</dd></div>
+          <div><dt>Garanterad drift</dt><dd class="spec--hot">−35°</dd></div>
+        </dl>
+        <a class="btn btn--blue" href="#kontakt">Be om pris</a>
+      </article>
+    </div>
+    <ul class="models__more">
+      <li><strong>Mitsubishi Ninja MSZ-FT</strong><span>En skandinavisk NINJA anpassad efter vårt klimat. Enkel att installera, får plats överallt – nya rum, garage, sommarstugor.</span></li>
+      <li><strong>Mitsubishi HR Cool</strong><span>Effektiv luftkonditionering för de veckor då det faktiskt går över trettio grader åt andra hållet.</span></li>
+      <li><strong>Miniventilation</strong><span>Vädrar med stängda fönster, året om. För täta hus där lukt, radon och fukt blir ett problem.</span></li>
+    </ul>
   </div>
 </section>
 
@@ -157,7 +281,8 @@
     <div class="calc__text">
       <p class="eyebrow">Räkna själv</p>
       <h2>Vad skulle du spara?</h2>
-      <p>Dra i reglaget till ungefär vad du betalar för värme idag. Beräkningen bygger på genomsnittlig årsverkningsgrad i norrländskt klimat och är en fingervisning – vid hembesöket räknar vi på huset på riktigt.</p>
+      <p>Dra i reglaget till ungefär vad du betalar för värme idag. Räkneexemplet bygger på schablonvärden för årsverkningsgrad i norrländskt klimat och är en fingervisning – vid hembesöket räknar vi på ditt hus på riktigt.</p>
+      <p class="calc__disclaimer">Antaganden: 1,45 kr/kWh inklusive nät och skatt. Luft/luft antas täcka ca 65 % av värmebehovet med årsvärmefaktor 2,6; luft/vatten 2,9; bergvärme 3,6. Siffrorna är schabloner, inte en offert.</p>
     </div>
     <form class="calc__box" onsubmit="return false">
       <div class="calc__field">
@@ -172,7 +297,7 @@
         <label for="typ">Vilken lösning?</label>
         <select id="typ">
           <option value="ll">Luft/luft – kompletterar befintlig el</option>
-          <option value="lv">Luft/vatten – ersätter el-/oljepanna</option>
+          <option value="lv">Luft/vatten – ersätter el- eller oljepanna</option>
           <option value="berg">Bergvärme – ersätter hela systemet</option>
         </select>
       </div>
@@ -182,83 +307,9 @@
           <strong id="saving">11 300 kr</strong>
           <span class="calc__lbl calc__lbl--light">per år · ca <span id="savingMonth">940</span> kr i månaden</span>
         </div>
-        <a class="btn btn--accent" href="#kontakt">Få en riktig kalkyl</a>
+        <a class="btn btn--red" href="#kontakt">Få en riktig kalkyl</a>
       </div>
     </form>
-  </div>
-</section>
-
-<!-- LÖSNINGAR -->
-<section class="solutions" id="losningar">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Våra lösningar</p>
-      <h2>Tre sätt att hämta värme ur naturen</h2>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1776860150305-108ed577d7d4?w=900&q=70&auto=format&fit=crop" alt="Utedel till luftvärmepump monterad på husvägg" loading="lazy">
-        <div class="card__body">
-          <span class="tag">Vanligaste valet</span>
-          <h3>Luft/luft</h3>
-          <p>För hus med direktverkande el, för stugan vid älven och för alla som vill ha svalka de veckor på sommaren det faktiskt blir varmt. Monteras på en dag.</p>
-          <small>Passar: villa med elradiatorer, fritidshus. Från 24 900 kr efter ROT.</small>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1604614006904-49e3b710eeb8?w=900&q=70&auto=format&fit=crop" alt="Rött trähus i snölandskap" loading="lazy">
-        <div class="card__body">
-          <span class="tag">Vattenburen värme</span>
-          <h3>Luft/vatten</h3>
-          <p>Har du radiatorer eller golvvärme och en panna som drar el eller olja? Då byter vi pannan mot en utedel och en inomhusmodul som sköter både värme och varmvatten. Ingen borrning.</p>
-          <small>Passar: vattenburet system. Från 139 000 kr efter ROT.</small>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1767684967135-5da8004a520e?w=900&q=70&auto=format&fit=crop" alt="Frostigt vinterlandskap i solljus" loading="lazy">
-        <div class="card__body">
-          <span class="tag">Lägst driftkostnad</span>
-          <h3>Berg- och jordvärme</h3>
-          <p>Hundra meter ner är det plus sex grader året runt, oavsett vad termometern visar. Den stabilaste värmen vi kan erbjuda – och en investering som syns i husets värde.</p>
-          <small>Passar: permanentbostad, större hus. Från 189 000 kr efter ROT.</small>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- BANNER -->
-<section class="banner">
-  <img src="https://images.unsplash.com/photo-1766503494739-66006a498fa3?w=2000&q=70&auto=format&fit=crop" alt="Frusen älv som rinner förbi en liten by på vintern" loading="lazy">
-  <div class="banner__text"><p>»Hundra meter ner i berget är det plus sex grader. Även i februari.«</p></div>
-</section>
-
-<!-- ERBJUDANDEN -->
-<section class="offers" id="erbjudanden">
-  <div class="wrap">
-    <div class="section-head section-head--row">
-      <div>
-        <p class="eyebrow">Just nu</p>
-        <h2>Vinterpriser, installerat och klart</h2>
-      </div>
-      <p>Gäller t.o.m. 31 januari. Fast pris inkluderar montering av certifierad tekniker, bygel eller markstativ och 5 års garanti.</p>
-    </div>
-    <div class="offers__grid">
-      <article class="offer">
-        <header><span>Luft/luft · Toppmodell</span><span class="tag tag--accent">Spara 4 000 kr</span></header>
-        <h3>Mitsubishi Hero MSZ-LN</h3>
-        <p>Klassen för sig i kyla: full effekt till −25°, går ner till −35°. Väldigt tyst, plasmafilter som renar luften, wifi-styrning så stugan är varm när du kommer fram på fredagskvällen.</p>
-        <div class="offer__price"><strong>31 900 kr</strong><small>efter ROT · ord. 35 900</small></div>
-        <a class="btn btn--primary" href="#kontakt">Jag vill ha en offert</a>
-      </article>
-      <article class="offer">
-        <header><span>Luft/luft · Bäst värde</span><span class="tag tag--accent">Spara 3 000 kr</span></header>
-        <h3>Daikin Caldo XR</h3>
-        <p>Utvecklad för Norden med köldmediet R32. Hög verkningsgrad i kyla, enkel att sköta och det val vi oftast rekommenderar för en normalstor villa med direktverkande el.</p>
-        <div class="offer__price"><strong>26 900 kr</strong><small>efter ROT · ord. 29 900</small></div>
-        <a class="btn btn--primary" href="#kontakt">Jag vill ha en offert</a>
-      </article>
-    </div>
   </div>
 </section>
 
@@ -267,14 +318,15 @@
   <div class="wrap steps__in">
     <div class="steps__text">
       <p class="eyebrow">Så går det till</p>
-      <h2>Från första samtal till varmt hus på några veckor</h2>
-      <p>Vi är certifierade installatörer enligt Boverkets föreskrift BFS 2015:4 och medlemmar i Svenska Kyl &amp; Värmepumpföreningen. Det är inte för att det ser bra ut på hemsidan – det är för att garantin på din pump bara gäller om montören har papperen i ordning.</p>
+      <h2>Från första samtalet till en driftsklar anläggning</h2>
+      <p>Vid installation är det viktigt att montören har rätt kunskap och utrustning. EU:s förnybarhetsdirektiv 2009/28/EG kräver att varje land har ett certifieringssystem för installatörer av förnybar energi – i Sverige enligt Boverkets föreskrift BFS 2015:4 CIN 2. Vi är utbildade, certifierade och följer det, och är medlemmar i Svenska Kyl &amp; Värmepumpföreningen.</p>
+      <p>Vi servar dessutom de flesta typer av värmepumpar och de flesta förekommande fabrikat – även sådana vi inte har installerat själva.</p>
     </div>
     <ol class="steps__list">
-      <li><strong>Du hör av dig</strong><span>Ring, eller fyll i formuläret med ort och nuvarande uppvärmning.</span></li>
-      <li><strong>Kostnadsfritt hembesök</strong><span>Vi tittar på huset, mäter och räknar på besparingen. Skriftlig offert med fast pris.</span></li>
-      <li><strong>Installation på en dag</strong><span>Certifierad montör, städat efter sig, genomgång av styrningen innan vi åker.</span></li>
-      <li><strong>Service när du behöver</strong><span>Vi finns kvar i Luleå och Kangos – samma nummer, samma människor.</span></li>
+      <li><strong>Du hör av dig</strong><span>Ring, eller skriv några rader i formuläret om huset och hur det värms idag.</span></li>
+      <li><strong>Kostnadsfritt hembesök</strong><span>Vi kommer ut, tittar på huset och ger rådgivning utan att det kostar något.</span></li>
+      <li><strong>Pris med installation och ROT inräknat</strong><span>Du får ett pris på en driftsklar anläggning, inte en prislapp på en låda.</span></li>
+      <li><strong>Installation och service</strong><span>Certifierad montör, idrifttagning och genomgång. Sedan finns vi kvar för servicen.</span></li>
     </ol>
   </div>
 </section>
@@ -282,32 +334,20 @@
 <!-- OM OSS -->
 <section class="about" id="om">
   <div class="wrap about__in">
-    <img class="about__img" src="https://images.unsplash.com/photo-1604614006904-49e3b710eeb8?w=1200&q=70&auto=format&fit=crop" alt="Rött och vitt trähus på snötäckt mark i Lappland" loading="lazy">
+    <img class="about__img" src="https://images.unsplash.com/photo-1767684967135-5da8004a520e?w=1000&q=70&auto=format&fit=crop" alt="Froströk över en isbelagd älv i lågt vintersolljus, med rimfrostiga träd och en bro" loading="lazy" width="1000" height="667">
     <div class="about__text">
       <p class="eyebrow">Om oss</p>
-      <h2>Från Kangos. Sedan 1999.</h2>
-      <p>Save It Naturvärme startade på Norra byavägen i Kangos, ett stenkast från Lainioälven, av Jan-Erik som var trött på att skicka pengar till elbolaget varje februari. Idag är vi fyra montörer och ett kontor till i Luleå, men den som ringer hamnar fortfarande hos någon som vet var Junosuando ligger.</p>
-      <p>Vi är inte en kedja. Den som räknar på ditt hus är samma person som installerar och svarar i telefon efteråt.</p>
-      <div class="team">
-        <div><strong>Jan-Erik</strong><span>Grundare, offert och hembesök</span></div>
-        <div><strong>Markus</strong><span>Montör, Tornedalen</span></div>
-        <div><strong>Petter &amp; Sofia</strong><span>Montörer, Luleå</span></div>
-      </div>
-      <ul class="places" aria-label="Orter vi arbetar i">
-        <li>Kangos</li><li>Pajala</li><li>Junosuando</li><li>Tärendö</li><li>Övertorneå</li><li>Haparanda</li><li>Kalix</li><li>Luleå</li><li>Boden</li><li>Gällivare</li>
+      <h2>Kangos och Luleå. Sedan 1999.</h2>
+      <p>Save It Naturvärme är ett företag som verkar inom energi och energiteknik. Vi tillhandahåller försäljning och rådgivning av energismarta uppvärmningslösningar, och tekniskt sett förordar vi återvinning av naturens egen energi – den vi finner i solen, jorden och vattnet.</p>
+      <p>Med en värmeväxling gjord av värmepumpar kan vi nyttja de resurserna och i princip få en uppvärmningslösning som är miljömässigt helt utan utsläpp. Vänd er till oss när det gäller luft/luft-, berg- och jordvärmepumpar samt luft/vattenvärmepumpar. Vi ombesörjer allt från ett kostnadsfritt hembesök till installation och service.</p>
+      <p>Bolaget registrerades 1999 och har kontor på Björkskatavägen i Luleå och på Norra byavägen i Kangos, ett stenkast från Lainioälven.</p>
+      <ul class="places" aria-label="Det här står vi för">
+        <li>Certifierade enl. BFS 2015:4 CIN 2</li>
+        <li>Medlem i SKVP</li>
+        <li>Auktoriserad Mitsubishi Electric</li>
+        <li>Auktoriserad Daikin</li>
+        <li>Lagerför även Bosch</li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<!-- KUNDRÖSTER -->
-<section class="quotes">
-  <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Kundröster</p><h2>Vad grannarna säger</h2></div>
-    <div class="quotes__grid">
-      <blockquote><p>Vi hade en gammal pump som gav upp vid tjugo minus. Den nya gick hela januari utan att vi rörde elpatronen. Elräkningen sjönk med nästan hälften.</p><cite>Eva-Lena &amp; Bertil, Junosuando</cite></blockquote>
-      <blockquote><p>Jan-Erik kom ut på en tisdag, mätte och räknade, och vi hade pumpen på väggen fredagen efter. Städade efter sig dessutom.</p><cite>Familjen Kero, Pajala</cite></blockquote>
-      <blockquote><p>Bergvärme i ett 70-talshus i Gammelstad. Dyr grej, men vi gick från 38 000 till 11 000 i el på ett år. Det räknar hem sig.</p><cite>Roger, Gammelstad</cite></blockquote>
     </div>
   </div>
 </section>
@@ -316,14 +356,14 @@
 <section class="contact" id="kontakt">
   <div class="wrap contact__in">
     <div class="contact__text">
-      <p class="eyebrow eyebrow--light">Boka hembesök · 0 kr</p>
+      <p class="eyebrow eyebrow--light">Hembesök och rådgivning · 0 kr</p>
       <h2>Vi kommer hem till dig.</h2>
-      <p>Skriv några rader om huset så ringer vi upp inom en arbetsdag. Eller ring direkt – vi har inga knappval.</p>
+      <p>Skriv några rader om huset, så hör vi av oss. Eller ring direkt – det är samma nummer till båda kontoren.</p>
       <a class="contact__phone" href="tel:0703432024">070-343 20 24</a>
       <div class="contact__addr">
-        <div><strong>Kangos</strong>Norra byavägen 100<br>980 63 Kangos</div>
-        <div><strong>Luleå</strong>Björkskatavägen 22<br>976 31 Luleå</div>
-        <div><strong>E-post</strong>info@naturvarme.nu<br>Mån–fre 07–17</div>
+        <div><strong>Kangos</strong>Save It Naturvärme AB<br>Norra byavägen 100<br>980 63 Kangos</div>
+        <div><strong>Luleå</strong>Save It Naturvärme<br>Björkskatavägen 22<br>976 31 Luleå</div>
+        <div><strong>Telefontid</strong>Kontorstid<br>Org.nr 556566-3795</div>
       </div>
     </div>
     <form class="contact__form" action="#" method="post" onsubmit="return false">
@@ -334,12 +374,14 @@
       <div class="form__row">
         <div class="field"><label for="f-ort">Ort</label><input id="f-ort" name="ort" type="text" placeholder="Tärendö"></div>
         <div class="field"><label for="f-hus">Värme idag</label>
-          <select id="f-hus" name="varme"><option>Direktverkande el</option><option>Elpanna</option><option>Oljepanna</option><option>Pellets eller ved</option><option>Gammal värmepump</option><option>Vet inte</option></select>
+          <select id="f-hus" name="varme">
+            <option>Direktverkande el</option><option>Elpanna</option><option>Oljepanna</option><option>Pellets eller ved</option><option>Gammal värmepump</option><option>Vet inte</option>
+          </select>
         </div>
       </div>
       <div class="field"><label for="f-msg">Om huset</label><input id="f-msg" name="hus" type="text" placeholder="Villa från -78, 140 kvm, ett plan, elradiatorer"></div>
-      <button type="submit" class="btn btn--primary btn--block">Boka gratis hembesök</button>
-      <small>Vi ringer, vi mejlar inte reklam. <a href="#">Så hanterar vi dina uppgifter.</a></small>
+      <button type="submit" class="btn btn--red btn--block">Boka kostnadsfritt hembesök</button>
+      <small>Formuläret i den här skissen skickar ingenting. <a href="#">Så hanterar vi dina uppgifter.</a></small>
     </form>
   </div>
 </section>
@@ -350,17 +392,65 @@
   <div class="wrap footer__in">
     <div>
       <strong>Save It Naturvärme AB</strong>
-      <span>Värmepumpar, installation och service i Luleå, Tornedalen och hela Norrbotten.</span>
+      <span>Försäljning, rådgivning, installation och service av värmepumpar i Luleå, Kangos och Tornedalen.</span>
     </div>
     <nav class="footer__nav" aria-label="Sidfot">
-      <a href="#losningar">Värmepumpar</a><a href="#rakna">Räkna själv</a><a href="#erbjudanden">Erbjudanden</a><a href="#om">Om oss</a><a href="#kontakt">Kontakt</a><a href="#">Integritetspolicy</a>
+      <a href="#koldskalan">Köldskalan</a><a href="#losningar">Värmepumpar</a><a href="#modeller">Modeller</a><a href="#rakna">Räkna själv</a><a href="#installation">Så går det till</a><a href="#om">Om oss</a><a href="#kontakt">Kontakt</a><a href="#">Integritetspolicy</a>
     </nav>
     <div class="footer__meta">
-      <span>Org.nr 556566-3795 · Certifierade enl. BFS 2015:4 · Medlem SKVP</span>
-      <span class="footer__photo">Foto: Mitchell Henderson, Sijmen van Hooff, Lena Polishko, alpha innotec / Unsplash</span>
+      <span>Org.nr 556566-3795 · Certifierade enl. BFS 2015:4 CIN 2 · Medlem i SKVP</span>
+      <span>Delar av texten om värmepumptyper är hämtad från Svenska Kyl &amp; Värmepumpföreningen, <a href="https://skvp.se">skvp.se</a>.</span>
+      <span class="footer__photo">Foto: Unsplash – Mitchell Henderson, Sijmen van Hooff, Lena Polishko</span>
     </div>
   </div>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://www.naturvarme.nu/#kangos",
+      "name": "Save It Naturvärme AB",
+      "url": "https://www.naturvarme.nu/",
+      "telephone": "+46703432024",
+      "description": "Försäljning, rådgivning, installation och service av luft/luft-, luft/vatten-, berg- och jordvärmepumpar.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Norra byavägen 100",
+        "postalCode": "980 63",
+        "addressLocality": "Kangos",
+        "addressRegion": "Norrbottens län",
+        "addressCountry": "SE"
+      },
+      "areaServed": ["Kangos", "Pajala", "Junosuando", "Tornedalen"],
+      "brand": ["Mitsubishi Electric", "Daikin", "Bosch"]
+    },
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://www.naturvarme.nu/#lulea",
+      "name": "Save It Naturvärme",
+      "url": "https://www.naturvarme.nu/",
+      "telephone": "+46703432024",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Björkskatavägen 22",
+        "postalCode": "976 31",
+        "addressLocality": "Luleå",
+        "addressRegion": "Norrbottens län",
+        "addressCountry": "SE"
+      },
+      "areaServed": ["Luleå"],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Save-it Naturvärme AB",
+        "identifier": "556566-3795"
+      }
+    }
+  ]
+}
+</script>
 
 <script src="js/main.js"></script>
 </body>
